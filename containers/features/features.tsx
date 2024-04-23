@@ -6,16 +6,19 @@ const Features = () => {
   return (
     <SectionWrapper>
       <SectionTitle title="Trăsături" />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <p>
-          Alimentare de la orice port usv, încărcător telefon, Power bank, priză
+          Alimentare de la orice port usb, încărcător telefon, Power bank, priză
           auto, alte surse (5v, 2A)
         </p>
         <p>
           Regulator pentru volumul lichidului, indicator al volumului, buton
           start.
         </p>
-        <p>Cutie din lemn și include set de pahare</p>
+        <p>
+          Cutie din lemn cu posibilitatea de a grava pe ea. Include un set de
+          pahare.
+        </p>
       </div>
     </SectionWrapper>
   );

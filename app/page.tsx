@@ -3,6 +3,7 @@ import Header from "@/containers/header/header";
 import Banner from "@/containers/banner/banner";
 import Description from "@/containers/description/description";
 import Features from "@/containers/features/features";
+import ProductList from "@/containers/product-list/product-list";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <Description />
       <Features />
+      <ProductList />
       <Footer />
     </main>
   );
