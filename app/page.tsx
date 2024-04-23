@@ -4,6 +4,7 @@ import Banner from "@/containers/banner/banner";
 import Description from "@/containers/description/description";
 import Features from "@/containers/features/features";
 import ProductList from "@/containers/product-list/product-list";
+import HowItWorks from "@/containers/how-it-works/how-it-works";
 
 export default function Home() {
   return (
@@ -14,9 +15,14 @@ export default function Home() {
           <Banner />
         </div>
       </div>
-      <Description />
-      <Features />
-      <ProductList />
+      <div className="w-full max-w-5xl">
+        <Description />
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <Features />
+          <HowItWorks />
+        </div>
+        <ProductList />
+      </div>
       <Footer />
     </main>
   );

@@ -18,6 +18,7 @@ export type ProductItemType = {
     length: number;
     height: number;
   };
+  price: number;
 };
 
 export const products: ProductItemType[] = [
@@ -30,6 +31,7 @@ export const products: ProductItemType[] = [
       length: 26,
       height: 12,
     },
+    price: 2499,
   },
   {
     title: "Auto-barmen 6",
@@ -40,6 +42,7 @@ export const products: ProductItemType[] = [
       length: 26,
       height: 12,
     },
+    price: 2799,
   },
   {
     title: "Auto-barmen 8",
@@ -50,5 +53,6 @@ export const products: ProductItemType[] = [
       length: 26,
       height: 12,
     },
+    price: 3099,
   },
 ];

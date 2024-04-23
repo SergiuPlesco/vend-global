@@ -22,6 +22,9 @@ const ProductItem = ({ item }: { item: ProductItemType }) => {
           <p>lungime: {item.size.length} cm</p>
           <p>înălțime: {item.size.height} cm</p>
         </div>
+        <div className="w-full">
+          <p className="text-center font-bold">{item.price} MDL</p>
+        </div>
         <div className="flex justify-center w-full my-4">
           <Link
             href="#order"
