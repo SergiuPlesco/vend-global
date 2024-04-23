@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Vend Global",
-  description: "Auto-barmen: distreaza-te, paharele se umplu automat.",
+  description: "Auto-barmen: distrează-te, paharele se umplu automat.",
 };
 
 export default function RootLayout({
