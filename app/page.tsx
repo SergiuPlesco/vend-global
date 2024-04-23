@@ -5,6 +5,7 @@ import Description from "@/containers/description/description";
 import Features from "@/containers/features/features";
 import ProductList from "@/containers/product-list/product-list";
 import HowItWorks from "@/containers/how-it-works/how-it-works";
+import Delivery from "@/containers/delivery/delivery";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <HowItWorks />
         </div>
         <ProductList />
+        <Delivery />
       </div>
       <Footer />
     </main>
