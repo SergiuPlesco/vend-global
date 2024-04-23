@@ -12,7 +12,7 @@ const Features = () => {
           auto, alte surse (5v, 2A)
         </p>
         <p>
-          Are regulator pentru volumul lichidului, indicator al volumului, buton
+          Regulator pentru volumul lichidului, indicator al volumului, buton
           start.
         </p>
         <p>Cutie din lemn și include set de pahare</p>
