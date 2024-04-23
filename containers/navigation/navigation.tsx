@@ -5,7 +5,9 @@ const Navigation = () => {
     <nav className="hidden sm:block">
       <ul className="flex justify-start gap-4">
         <li>Ce este Auto-barmen</li>
-        <li>Specificații</li>
+        <li>Trăsături</li>
+        <li>Versiuni</li>
+        <li>Preț</li>
         <li>Cum comand</li>
       </ul>
     </nav>

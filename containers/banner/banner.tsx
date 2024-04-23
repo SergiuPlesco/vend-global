@@ -6,13 +6,13 @@ const Banner = () => {
   return (
     <div className="grid xs:grid-cols-1 md:grid-cols-2 justify-items-stretch gap-10 my-[50px] md:my-[150px]">
       <div className="justify-self-center md:justify-self-start self-center">
-        <h1 className="text-4xl text-center md:text-left md:text-5xl mb-4">
+        <h1 className="text-4xl md:text-6xl text-center md:text-left mb-8">
           Auto-barmen
         </h1>
-        <p className="text-xl md:text-2xl text:center md-text-left mb-2">
+        <h2 className="text-xl md:text-3xl text:center md-text-left mb-2">
           Cadoul perfect pentru bărbați.
-        </p>
-        <p className="text-sm text-center md:text-left">
+        </h2>
+        <p className="text-sm md:text-md text-center md:text-left">
           Tu te distrezi, iar eu îți umplu paharele.
         </p>
       </div>
