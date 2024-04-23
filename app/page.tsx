@@ -6,6 +6,7 @@ import Features from "@/containers/features/features";
 import ProductList from "@/containers/product-list/product-list";
 import HowItWorks from "@/containers/how-it-works/how-it-works";
 import Delivery from "@/containers/delivery/delivery";
+import { SECTIONS_IDS } from "./constants/sections-ids";
 
 export default function Home() {
   return (
@@ -17,13 +18,13 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full max-w-5xl">
-        <Description />
+        <Description id={SECTIONS_IDS.description} />
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <Features />
+          <Features id={SECTIONS_IDS.features} />
           <HowItWorks />
         </div>
-        <ProductList />
-        <Delivery />
+        <ProductList id={SECTIONS_IDS.products} />
+        <Delivery id={SECTIONS_IDS.delivery} />
       </div>
       <Footer />
     </main>

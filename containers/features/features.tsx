@@ -3,14 +3,14 @@ import SectionWrapper from "@/components/section-wrapper/section-wrapper";
 import SectionTitle from "@/components/section-title/section-title";
 import { features } from "./data";
 
-const Features = () => {
+const Features = ({ id }: { id: string }) => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id={id}>
       <SectionTitle title="Trăsături" />
 
       <ul className="list-disc pl-4">
-        {features.map((feature) => {
-          return <li>{feature}</li>;
+        {features.map((feature, index) => {
+          return <li key={index}>{feature}</li>;
         })}
       </ul>
     </SectionWrapper>

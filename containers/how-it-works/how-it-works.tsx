@@ -7,8 +7,8 @@ const HowItWorks = () => {
     <SectionWrapper>
       <SectionTitle title="Cum lucrează" />
       <ul className="list-disc pl-4">
-        {process.map((process) => {
-          return <li>{process}</li>;
+        {process.map((process, index) => {
+          return <li key={index}>{process}</li>;
         })}
       </ul>
     </SectionWrapper>

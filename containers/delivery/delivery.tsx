@@ -2,9 +2,10 @@ import React from "react";
 import SectionWrapper from "@/components/section-wrapper/section-wrapper";
 import SectionTitle from "@/components/section-title/section-title";
 
-const Delivery = () => {
+const Delivery = ({ id }: { id: string }) => {
+  console.log("delivery", id);
   return (
-    <SectionWrapper>
+    <SectionWrapper id={id}>
       <SectionTitle title="Livrare" />
       <p>În raza Mun. Chișinău - 50 MDL</p>
       <p>Pe teritoriul Republicii Moldova, în afara Mun. Chișinău - 100 MDL </p>

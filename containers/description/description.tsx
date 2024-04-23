@@ -2,9 +2,9 @@ import React from "react";
 import SectionTitle from "@/components/section-title/section-title";
 import SectionWrapper from "@/components/section-wrapper/section-wrapper";
 
-const Description = () => {
+const Description = ({ id }: { id: string }) => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id={id}>
       <SectionTitle title="Ce este Auto-barmen" />
 
       <p className="text-center">
