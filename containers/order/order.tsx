@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { sendEmail } from "@/utils/email";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -42,8 +43,17 @@ const Order = ({ id }: { id: string }) => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    const res = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    });
+
+    // const data = await res.json();
+    // console.log(data);
   };
 
   return (
