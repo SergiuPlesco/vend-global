@@ -5,7 +5,7 @@ import { SECTIONS_IDS } from "@/app/constants/sections-ids";
 const Navigation = () => {
   return (
     <nav className="hidden sm:block">
-      <ul className="flex justify-start gap-4">
+      <ul className="flex justify-start gap-6">
         <li>
           <Link href={`#${SECTIONS_IDS.description}`}>Ce este Auto-barmen</Link>
         </li>
@@ -22,7 +22,7 @@ const Navigation = () => {
           <a href={`#${SECTIONS_IDS.delivery}`}>Livrare</a>
         </li>
         <li>
-          <Link href={`#${SECTIONS_IDS.order}`}>Cum comand</Link>
+          <Link href={`#${SECTIONS_IDS.order}`}>Comandă acum</Link>
         </li>
       </ul>
     </nav>

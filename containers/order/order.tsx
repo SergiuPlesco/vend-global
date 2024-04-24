@@ -47,7 +47,7 @@ const Order = ({ id }: { id: string }) => {
   return (
     <SectionWrapper id={id}>
       <SectionTitle title="Comandă" />
-      <div className="w-full max-w-2xl mx-auto border p-4 rounded-sm">
+      <div className="w-full max-w-2xl mx-auto border border-[--background-banner] p-4 rounded-sm shadow-md shadow-[--background-banner]">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <FormField

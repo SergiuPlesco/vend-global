@@ -6,7 +6,7 @@ import { SECTIONS_IDS } from "@/app/constants/sections-ids";
 
 const ProductItem = ({ item }: { item: ProductItemType }) => {
   return (
-    <div className="border rounded-sm">
+    <div className="border rounded-sm border-[-background-secondary] shadow-md shadowr-[-background-secondary]">
       <div className="h-[375px] bg-[--background-secondary] rounded-t-sm mb-4">
         <Image
           src={item.image}
