@@ -22,9 +22,11 @@ const formSchema = z.object({
   name: z.string().min(2, {
     message: "Numele trebuie să fie minim 2 caractere.",
   }),
-  phone: z.string(),
+  phone: z.string().length(9, {
+    message: "Asigură-te că numărul are 9 cifre și începe cu 0, ex. 078xxxxxx",
+  }),
   message: z.string().max(300, {
-    message: "Mesajul nu poate mai lung decat 300 caractere.",
+    message: "Mesajul nu poate fi mai lung decât 300 caractere.",
   }),
   isEngraving: z.boolean().default(false).optional(),
 });

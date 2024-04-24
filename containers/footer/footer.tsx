@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <div className="w-full pt-10 pb-5 mt-20 border-t bg-[--background-banner]">
-      <div className="flex justify-between w-full max-w-5xl mx-auto px-4 mb-10">
+      <div className="flex flex-col md:flex-row md:justify-between gap-6 w-full max-w-5xl mx-auto px-4 mb-10">
         <div className="flex flex-col gap-2 mb-4">
           <p className="font-semibold">Contactează-ne</p>
           <a
