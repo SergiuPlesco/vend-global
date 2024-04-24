@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ProductItemType } from "./data";
+import { SECTIONS_IDS } from "@/app/constants/sections-ids";
 
 const ProductItem = ({ item }: { item: ProductItemType }) => {
   return (
@@ -27,7 +28,7 @@ const ProductItem = ({ item }: { item: ProductItemType }) => {
         </div>
         <div className="flex justify-center w-full my-4">
           <Link
-            href="#order"
+            href={`#${SECTIONS_IDS.order}`}
             className="bg-black text-white py-2 px-4 rounded-sm hover:bg-slate-800 hover:scale-105"
           >
             Comandă

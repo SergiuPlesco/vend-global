@@ -3,7 +3,6 @@ import SectionWrapper from "@/components/section-wrapper/section-wrapper";
 import SectionTitle from "@/components/section-title/section-title";
 
 const Delivery = ({ id }: { id: string }) => {
-  console.log("delivery", id);
   return (
     <SectionWrapper id={id}>
       <SectionTitle title="Livrare" />

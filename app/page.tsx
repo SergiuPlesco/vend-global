@@ -7,6 +7,7 @@ import ProductList from "@/containers/product-list/product-list";
 import HowItWorks from "@/containers/how-it-works/how-it-works";
 import Delivery from "@/containers/delivery/delivery";
 import { SECTIONS_IDS } from "./constants/sections-ids";
+import Order from "@/containers/order/order";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         </div>
         <ProductList id={SECTIONS_IDS.products} />
         <Delivery id={SECTIONS_IDS.delivery} />
+        <Order id={SECTIONS_IDS.order} />
       </div>
       <Footer />
     </main>
