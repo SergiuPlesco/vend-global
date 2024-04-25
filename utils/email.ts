@@ -1,5 +1,4 @@
 import Mailjet from "node-mailjet";
-import { RequestData } from "node-mailjet/declarations/request/Request";
 
 const mailjetClient = Mailjet.apiConnect(
   process.env.NEXT_PUBLIC_MAILJET_API_PUBLIC_KEY as string,
