@@ -1,8 +1,8 @@
 import Mailjet from "node-mailjet";
 
 const mailjetClient = Mailjet.apiConnect(
-  process.env.NEXT_PUBLIC_MAILJET_API_PUBLIC_KEY as string,
-  process.env.NEXT_PUBLIC_MAILJET_API_PRIVATE_KEY as string
+  process.env.NEXT_PUBLIC_MAILJET_API_PUBLIC_KEY!,
+  process.env.NEXT_PRIVATE_MAILJET_API_PRIVATE_KEY!
 );
 
 type EmailData = {
